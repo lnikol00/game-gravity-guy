@@ -138,23 +138,6 @@ public class ObstacleGenerator : MonoBehaviour
 
             yield return StartCoroutine(gen1());
             yield return StartCoroutine(gen2());
-
-            if (HeightRange.y < 4f)
-            {
-                HeightRange.x += 0.5f;
-                HeightRange.y += 0.5f;
-            }
-
-            if (Speed < 15)
-            {
-                Speed += 1f;
-                Smooth += 0.5f;
-            }
-
-            if (D < 7)
-            {
-                D++;
-            }
         }
     }
 
