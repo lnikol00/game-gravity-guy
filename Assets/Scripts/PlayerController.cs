@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // public float Force;
     private Rigidbody2D rb;
     private GameController gc;
 
@@ -29,9 +28,4 @@ public class PlayerController : MonoBehaviour
             gc.GameOver();
         }
     }
-
-    // public void Flap()
-    // {
-    //     rb.AddForce(Vector2.up * Force);
-    // }
 }
