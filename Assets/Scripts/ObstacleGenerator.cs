@@ -57,7 +57,7 @@ public class ObstacleGenerator : MonoBehaviour
         StartCoroutine(bottomRandGen());
         StartCoroutine(generator());
     }
-
+    
     private void FillPool()
     {
         Obstacles = new Queue<GameObject>();
