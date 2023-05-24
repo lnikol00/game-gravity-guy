@@ -25,6 +25,14 @@ public class ObstacleGenerator : MonoBehaviour
     private float bottomHeight;
     private float bottomWidth;
 
+    public GameObject[] hazards;
+    public int hazardCount;
+    public float startWait;
+    public float spawnWait;
+    // public float Speed;
+    public static bool IsGameOver;
+    public float waveWait;
+
     private float topInterval
     {
         get => (topWidth - Smooth / Speed) / Speed;
@@ -56,6 +64,8 @@ public class ObstacleGenerator : MonoBehaviour
         StartCoroutine(topRandGen());
         StartCoroutine(bottomRandGen());
         StartCoroutine(generator());
+
+        StartCoroutine(SpawnWaves());
     }
     
     private void FillPool()
@@ -105,6 +115,22 @@ public class ObstacleGenerator : MonoBehaviour
             updateTopTransform();
             yield return new WaitForSeconds(topInterval);
             top.SetActive(true);
+        }
+    }
+
+    IEnumerator SpawnWaves()
+    {
+        yield return new WaitForSeconds(startWait);
+        while (!IsGameOver)
+        {
+            for(int i = 0; i < hazardCount; i++){
+            GameObject hazard = hazards[Random.Range(0, hazards.Length)];
+            Vector3 spawnPosition = new Vector3(15.0f ,Random.Range(-3.0f, 3.0f),0.0f);
+            Instantiate(hazard, spawnPosition, Quaternion.identity);
+            updateSpeed();
+            yield return new WaitForSeconds(spawnWait);
+        }
+        yield return new WaitForSeconds(waveWait);
         }
     }
 

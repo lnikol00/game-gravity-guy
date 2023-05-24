@@ -2180,7 +2180,6 @@ GameObject:
   - component: {fileID: 1502808412}
   - component: {fileID: 1502808415}
   - component: {fileID: 1502808414}
-  - component: {fileID: 1502808417}
   m_Layer: 0
   m_Name: Controller
   m_TagString: GameController
@@ -2256,6 +2255,12 @@ MonoBehaviour:
   ObstaclesContainer: {fileID: 1653655922}
   Obstacle: {fileID: 2993170491500629864, guid: ab762a1618f3d0444ac0a93479885127,
     type: 3}
+  hazards:
+  - {fileID: 2993170491500629864, guid: 525a6c63b5144cc44a6094aa55237879, type: 3}
+  hazardCount: 10
+  startWait: 1
+  spawnWait: 1
+  waveWait: 1
 --- !u!82 &1502808416
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2352,25 +2357,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1502808417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502808411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c79bf4a3b8cf8a049a05c1ac60ed24ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hazards:
-  - {fileID: 2993170491500629864, guid: 525a6c63b5144cc44a6094aa55237879, type: 3}
-  hazardCount: 10
-  startWait: 1
-  spawnWait: 1
-  Speed: 10
-  waveWait: 1
 --- !u!1 &1519383785
 GameObject:
   m_ObjectHideFlags: 0
