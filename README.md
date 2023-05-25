@@ -9,4 +9,6 @@
 * You lose if the camera cathes you 
 * Gameplay can be seen in the gif below.
 
-![ezgif com-crop](https://github.com/lnikol00/game-gravity-guy/assets/122328343/5d29d22c-ad34-46e1-9e0d-860fdecb2fe0)
+<p align="center">
+  ![ezgif com-crop](https://github.com/lnikol00/game-gravity-guy/assets/122328343/5d29d22c-ad34-46e1-9e0d-860fdecb2fe0)
+</p>
