@@ -6,5 +6,5 @@
 * The game had 2 game modes: Single Player and Multi Player
 * In Single Player mode the goal is to set the highest score.
 * In Multi Player mode the goal is to beat your friend.
-* You lose if the camera angle cathes you 
+* You lose if the camera cathes you 
 * Gameplay can be seen in the gif below.
