@@ -8,4 +8,5 @@
 * In Multi Player mode the goal is to beat your friend.
 * You lose if the camera cathes you 
 * Gameplay can be seen in the gif below.
-![](ezgif.com-crop.gif)
+
+![Uploading ezgif.com-crop.gif…]()
