@@ -1,23 +1,22 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class PlayerTwoController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private GameController gc;
-    private TwoPlayerGameController gv;
+
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();  
     }
-
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             rb.gravityScale *= -1;
         }
