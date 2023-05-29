@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
     public GameObject GameOverUI;
     public Text PlayingScoreText;
     public Text GameOverScoreText;
+    public Text TwoPlayerGameOverScoreText;
     public Text GameOverBestScoreText;
 
     private int score;
@@ -104,6 +105,7 @@ public class GameController : MonoBehaviour
         ColorEffect.ColorIndex--;
         PlayingUI.SetActive(false);
         GameOverScoreText.text = "SCORE\n" + score;
+        TwoPlayerGameOverScoreText.text = "Better Player Won!";
         GameOverBestScoreText.text = "BEST SCORE\n" + bestScore;
         GameOverUI.SetActive(true);
         playingBackgroungMusic.Pause();

@@ -58,7 +58,7 @@ public class TwoPlayerGameController : MonoBehaviour
         PlayerPrefs.SetInt(MainController.Prefs_ColorIndex_Key, ColorEffect.ColorIndex);
         ColorEffect.ColorIndex--;
         PlayingUI.SetActive(false);
-        GameOverScoreText.text = "Player 1 has won!";
+        GameOverScoreText.text = "Better Player Won!";
         GameOverUI.SetActive(true);
         playingBackgroungMusic.Pause();
         playingBackgroungMusicTime = playingBackgroungMusic.time;
