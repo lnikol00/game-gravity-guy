@@ -1,4 +1,5 @@
-![gravity-guy](https://github.com/lnikol00/game-gravity-guy/assets/122328343/b2f4078d-ab36-4e01-9601-6bf2e5b660a3)
+![gravity-guy](https://github.com/lnikol00/game-gravity-guy/assets/122328343/23a617d3-fec7-46a6-b615-6ee401af4d19)
+
 # GRAVITY GUY - 2D GAME
 ## Project Description
 
@@ -9,4 +10,4 @@
 * You lose if the camera cathes you 
 * Gameplay can be seen in the gif below.
 
- ![ezgif com-crop](https://github.com/lnikol00/game-gravity-guy/assets/122328343/5d29d22c-ad34-46e1-9e0d-860fdecb2fe0)
+![ezgif com-crop](https://github.com/lnikol00/game-gravity-guy/assets/122328343/b74310ae-8a36-482b-b81d-9422c32c5d08)
