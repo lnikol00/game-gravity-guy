@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private GameController gc;
-    private TwoPlayerGameController gv;
 
     void Awake()
     {
