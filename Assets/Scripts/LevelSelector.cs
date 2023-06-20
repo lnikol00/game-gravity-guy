@@ -7,6 +7,7 @@ public class LevelSelector : MonoBehaviour
 {
     public GameObject menuPanel;
     public GameObject levelPanel;
+    public GameObject InfoPanel;
 
     public void ReturnToMainMenu()
     {
@@ -22,5 +23,17 @@ public class LevelSelector : MonoBehaviour
     public void OpenTwoPlayers()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void InfoPopupToggle()
+    {
+        if(!InfoPanel.activeSelf)
+        {
+            InfoPanel.SetActive(true);
+        }
+        else
+        {
+            InfoPanel.SetActive(false);
+        }
     }
 }

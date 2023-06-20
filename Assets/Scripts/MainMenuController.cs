@@ -34,7 +34,6 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
-        // SceneManager.LoadScene(2);
         menuPanel.SetActive(false);
         levelPanel.SetActive(true);
     }
