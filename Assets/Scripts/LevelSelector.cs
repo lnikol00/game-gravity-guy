@@ -5,18 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelector : MonoBehaviour
 {
+    public GameObject menuPanel;
+    public GameObject levelPanel;
+
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene(1);
+        menuPanel.SetActive(true);
+        levelPanel.SetActive(false);
     }
 
     public void OpenOnePlayer()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     public void OpenTwoPlayers()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 }

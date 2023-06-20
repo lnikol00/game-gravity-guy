@@ -9,6 +9,8 @@ public class MainMenuController : MonoBehaviour
     public GameObject QuitPopupUI;
     public GameObject InfoPanel;
     public Text BestScoreText;
+    public GameObject menuPanel;
+    public GameObject levelPanel;
 
     void Awake()
     {
@@ -32,7 +34,9 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(2);
+        // SceneManager.LoadScene(2);
+        menuPanel.SetActive(false);
+        levelPanel.SetActive(true);
     }
 
     public void QuitPopupToggle()
